@@ -51,3 +51,8 @@
 
 - YouTube: https://www.youtube.com/@%E3%83%8D%E3%83%AB2048
 - X: https://x.com/ner2048
+
+## AdSense
+- Google AdSenseの自動広告コードを`index.html`の`<head>`に設定済みです。
+- 広告はAdSense側の設定により自動配置されます。
+- Publisher ID: `ca-pub-9139206140818266`

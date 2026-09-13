@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポケモン金銀→VC版（ポケムーバー対応）変換 | NER Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">POKÉMON GOLD / SILVER</p>
+      <h1>ポケモン金銀→VC版（ポケムーバー対応）変換<br><span class="brand-title">NER Converter</span></h1>
+      <p class="lead">実機・mGBAの日本語「ポケットモンスター 金・銀」のセーブを、3DS VC版で使用するための <code>sav.dat</code> に変換します。<br>本サイトで変換したデータを使えば、ポケムーバーでポケモンバンクへの輸送が可能です。</p>
+    </section>
+
+    <section class="card">
+      <label class="drop" id="drop">
+        <input id="file" type="file" accept=".sav,.dat,application/octet-stream">
+        <span class="drop-title">セーブファイルを選択</span>
+        <span class="drop-sub">ここに .sav / .dat をドラッグ＆ドロップ</span>
+      </label>
+
+      <div id="status" class="status hidden"></div>
+
+      <div id="result" class="result hidden">
+        <div class="result-row"><span>判定</span><strong id="game"></strong></div>
+        <div class="result-row"><span>入力サイズ</span><strong id="size"></strong></div>
+        <div class="result-row"><span>チェックサム</span><strong id="checksum"></strong></div>
+        <div class="result-row"><span>VC互換パッチ</span><strong>適用済み</strong></div>
+        <button id="download" class="button">sav.dat をダウンロード</button>
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>対応範囲</h2>
+      <ul>
+        <li>日本語版 ポケットモンスター 金・銀（クリスタル版未対応。対応予定）</li>
+        <li>実機・エミュレーターから抽出したセーブ</li>
+        <li>処理はすべてブラウザ内で実行され、セーブデータはサーバーへ送信されません</li>
+      </ul>
+
+      <h2>使い方</h2>
+      <ol>
+        <li>実機またはmGBAからセーブデータを抽出します。</li>
+        <li>このページにセーブファイルを選択します。</li>
+        <li>生成された <code>sav.dat</code> をダウンロードします。</li>
+        <li>Checkpoint等を使用して日本語VC版 金・銀へ書き込みます。</li>
+        <li>VC上でゲームを起動し、セーブを確認してからポケムーバーで確認します。</li>
+      </ol>
+
+      <p class="note">※ この初版は日本語版の金・銀専用です。クリスタルは対応していません。</p>
+      <p class="note">※ 変換前のセーブデータは必ずバックアップしてください。</p>
+    </section>
+
+    <footer>
+      <a href="https://github.com/FM1337/sav2vc" target="_blank" rel="noopener">Reference: sav2vc</a>
+    
+    <div class="social-fixed" aria-label="作者リンク">
+      <a class="social-icon youtube-icon" href="https://www.youtube.com/@%E3%83%8D%E3%83%AB2048" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+        <span class="youtube-play" aria-hidden="true"></span>
+      </a>
+      <a class="social-icon x-icon" href="https://x.com/ner2048" target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+        <span aria-hidden="true">𝕏</span>
+      </a>
+    </div>
+
+</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

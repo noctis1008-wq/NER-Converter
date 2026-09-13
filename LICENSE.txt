@@ -1,0 +1,4 @@
+This project is an independent save-conversion utility.
+
+Pokémon and related trademarks are properties of their respective owners.
+This project is not affiliated with or endorsed by Nintendo, The Pokémon Company, or Game Freak.

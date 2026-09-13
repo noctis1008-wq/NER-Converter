@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ポケモン金銀→VC版（ポケムーバー対応）変換 | NER Converter</title>
+  <title>NER Converter | ポケモン金銀クリスタル→VC版（ポケムーバー対応）変換</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <p class="eyebrow">POKÉMON GOLD / SILVER</p>
-      <h1>ポケモン金銀→VC版（ポケムーバー対応）変換<br><span class="brand-title">NER Converter</span></h1>
-      <p class="lead">実機・mGBAの日本語「ポケットモンスター 金・銀」のセーブを、3DS VC版で使用するための <code>sav.dat</code> に変換します。<br>本サイトで変換したデータを使えば、ポケムーバーでポケモンバンクへの輸送が可能です。</p>
+      <p class="eyebrow">POKÉMON GOLD / SILVER / CRYSTAL</p>
+      <h1>ポケモン金銀クリスタル→VC版（ポケムーバー対応）変換<br><span class="brand-title">NER Converter</span></h1>
+      <p class="lead">実機・mGBAの日本語版「ポケットモンスター 金・銀・クリスタル」のセーブデータを、3DSのVC版で使用するための <code>sav.dat</code> に変換します。<br>本サイトで変換したデータを使えば、ポケムーバーでポケモンバンクへの輸送が可能です。</p>
     </section>
 
     <section class="card">
@@ -35,7 +35,7 @@
     <section class="info">
       <h2>対応範囲</h2>
       <ul>
-        <li>日本語版 ポケットモンスター 金・銀（クリスタル版未対応。対応予定）</li>
+        <li>日本語版 ポケットモンスター 金・銀・クリスタル</li>
         <li>実機・エミュレーターから抽出したセーブ</li>
         <li>処理はすべてブラウザ内で実行され、セーブデータはサーバーへ送信されません</li>
       </ul>
@@ -45,11 +45,11 @@
         <li>実機またはmGBAからセーブデータを抽出します。</li>
         <li>このページにセーブファイルを選択します。</li>
         <li>生成された <code>sav.dat</code> をダウンロードします。</li>
-        <li>Checkpoint等を使用して日本語VC版 金・銀へ書き込みます。</li>
+        <li>Checkpoint等を使用して対応する日本語VC版 金・銀・クリスタルへ書き込みます。</li>
         <li>VC上でゲームを起動し、セーブを確認してからポケムーバーで確認します。</li>
       </ol>
 
-      <p class="note">※ この初版は日本語版の金・銀専用です。クリスタルは対応していません。</p>
+      <p class="note">※ 日本語版クリスタルは、0x10000 bytesのセーブをVC用0x10010 bytesへ変換し、VC互換領域を初期化します。</p>
       <p class="note">※ 変換前のセーブデータは必ずバックアップしてください。</p>
     </section>
 
